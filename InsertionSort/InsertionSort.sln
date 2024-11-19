@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.1-3 Corman Algo Book page
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binaray Sum", "Binaray Sum\Binaray Sum.csproj", "{928C4C21-CA40-4E82-8133-F4A8979F5FD2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binaray_Sum_Different_Length", "Binaray_Sum_Different_Length\Binaray_Sum_Different_Length.csproj", "{DC8C1CD0-C161-476F-9052-EA81C6C19779}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{928C4C21-CA40-4E82-8133-F4A8979F5FD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{928C4C21-CA40-4E82-8133-F4A8979F5FD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{928C4C21-CA40-4E82-8133-F4A8979F5FD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC8C1CD0-C161-476F-9052-EA81C6C19779}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC8C1CD0-C161-476F-9052-EA81C6C19779}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC8C1CD0-C161-476F-9052-EA81C6C19779}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC8C1CD0-C161-476F-9052-EA81C6C19779}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
