@@ -24,11 +24,32 @@ namespace InsertionSort
                 }
                 A[i + 1] = key;
             }
+            Console.Write("Ascending Order Sorted Array: [");
+            Print(A);
+            Console.WriteLine("]");
         }
-            //foreach(var x in A)
-            //{
-            //    Console.Write("," +x);
-            //}
+
+        public void DecreasingOrderInsertionSort(int[] A)
+        {
+            int key;
+            int i;
+            for (int j = 1; j < A.Length; j++)
+            {
+                key = A[j];
+                i = j - 1;
+                while (i >= 0 && A[i] < key)
+                {
+                    A[i + 1] = A[i];
+                    i = i - 1;
+                }
+                A[i + 1] = key;
+            }
+            Console.Write("Descending Order Sorted Array: [");
+            Print(A);
+            Console.WriteLine("]");
+        }
+
+            
             public void Print(int[] A) {
                 bool first = true;
                 foreach (var x in A)
@@ -50,9 +71,8 @@ namespace InsertionSort
             int[] A = { 5, 4, 1, 3, 2 };
             InsertionSort sort = new InsertionSort();
             sort.InsertionSort1(A);
-            Console.Write("Sorted Array: [");
-            sort.Print(A);
-            Console.Write("]");
+            sort.DecreasingOrderInsertionSort(A);
+
             
         }
     }

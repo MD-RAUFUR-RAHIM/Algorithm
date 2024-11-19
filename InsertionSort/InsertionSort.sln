@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35431.28
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertionSort", "InsertionSort\InsertionSort.csproj", "{659A4D30-B79C-4195-BC82-C2AF8814800F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.1-3 Corman Algo Book page 43", "2.1-3 Corman Algo Book page 43\2.1-3 Corman Algo Book page 43.csproj", "{7D1FDF24-6442-427F-8991-60981CF177A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{659A4D30-B79C-4195-BC82-C2AF8814800F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{659A4D30-B79C-4195-BC82-C2AF8814800F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{659A4D30-B79C-4195-BC82-C2AF8814800F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D1FDF24-6442-427F-8991-60981CF177A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D1FDF24-6442-427F-8991-60981CF177A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D1FDF24-6442-427F-8991-60981CF177A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D1FDF24-6442-427F-8991-60981CF177A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
