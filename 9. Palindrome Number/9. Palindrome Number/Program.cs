@@ -5,23 +5,24 @@ public class Solution()
 {
     public bool IsPalindrome(int x)
     {
-        string x1 = x.ToString();
-        char[] x2 = x1.ToCharArray();
-        string x3 = ReverseString(x2);
-        if (x1 == x3)
-        {
-            return true;
-        }
-        else
+        if (x < 0)
         {
             return false;
         }
+        else
+        {
+            string x1 = x.ToString();
+            char[] x2 = x1.ToCharArray();
+            Array.Reverse(x2);
+            return x1 == new string(x2);
+        }
+        
 
     }
-    public string ReverseString(char[] c) 
-    {
-        Array.Reverse(c);
-        string reversedString = new string(c);
-        return reversedString;
-    }
+    //public string ReverseString(char[] c) 
+    //{
+    //    Array.Reverse(c);
+    //    string reversedString = new string(c);
+    //    return reversedString;
+    //}
 }
