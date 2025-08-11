@@ -60,11 +60,11 @@ public class LinkedList
     }
     public void AddAt(int data, int position)
     {
-        if (position < 0)
+        if (position <= 0)
         {
             throw new ArgumentOutOfRangeException("position");
         }
-        else if (position == 0)
+        else if (position == 1)
         {
             AddFirst(data);
             return;
@@ -72,8 +72,13 @@ public class LinkedList
         else
         {
             Node? temp = head;
-            for (int i = 0; i < position -1; i++)
+            for (int i = 1; i < position - 1 ; i++)
             {
+                if(temp == null)
+                {
+                    Console.WriteLine("Invalid position");
+                    return;
+                }
                 temp = temp.Next;
             }
             Node newNode = new Node(data);
@@ -138,18 +143,21 @@ public class Program
         Console.WriteLine("------Linked List---------");
         LinkedList list = new LinkedList();
         list.AddFirst(10);
-        list.AddFirst(20);
-       // list.AddFirst(30);
+        list.AddFirst(20);    
         list.AddLast(50);
-        //list.AddLast(35);
+        list.AddLast(5000);
         list.AddAt(0, 1);
         list.GetAll();
-        Console.WriteLine("------Linked List Remove From Last Example---------");
-        list.RemoveFromLast();
-        list.GetAll();
-        Console.WriteLine("------Linked List Remove From First Example---------");
-        list.RemoveFromFirst();
-        list.AddAtV2(100, 1);
-        list.GetAll();
+        //Console.WriteLine("------Linked List Remove From Last Example---------");
+        //list.RemoveFromLast();
+        //list.GetAll();
+        LinkedList list2 = new LinkedList();
+        Console.WriteLine("------Linked List 2---------");
+        list2.AddFirst(5);
+        list2.AddFirst(6);
+        list2.AddFirst(7);
+        list2.AddLast(8);
+        list2.AddAtV2(100, 1);
+        list2.GetAll();
     }
 }
