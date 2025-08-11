@@ -94,10 +94,18 @@ public class LinkedList
             Console.Write("The list is empty");
             return;
         }
-            
+        if (head == tail)
+        {
+            // Only one node in the list
+            head = null;
+            tail = null;
+            count--;
+            return;
+        }
         Node? temp = head;
         head = head.Next;
         temp.Next = null;
+        count--;
     }
     public void RemoveFromLast()
     {
