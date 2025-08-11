@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36301.6 d17.14
+VisualStudioVersion = 17.14.36301.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linked_List", "Linked_List\Linked_List.csproj", "{B60A00D0-E24F-4DBD-8F9D-5B76E205AD6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseLinkedList", "ReverseLinkedList\ReverseLinkedList.csproj", "{B81E5BC9-1E31-455B-9C95-E15CEB50BE7D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{B60A00D0-E24F-4DBD-8F9D-5B76E205AD6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B60A00D0-E24F-4DBD-8F9D-5B76E205AD6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B60A00D0-E24F-4DBD-8F9D-5B76E205AD6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B81E5BC9-1E31-455B-9C95-E15CEB50BE7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B81E5BC9-1E31-455B-9C95-E15CEB50BE7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B81E5BC9-1E31-455B-9C95-E15CEB50BE7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B81E5BC9-1E31-455B-9C95-E15CEB50BE7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
