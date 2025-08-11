@@ -106,22 +106,51 @@ public class LinkedList
             Console.Write("The list is empty");
             return;
         }
+        if (head == tail)
+        {
+            // Only one node in the list
+            head = null;
+            tail = null;
+            count--;
+            return;
+        }
         Node? temp = head;
-        while(temp.Next != tail)
+        while (temp.Next != null && temp.Next != tail)
         {
             temp = temp.Next;
         }
         temp.Next = null;
-
+        tail = temp;
+        count--;
     }
     public void GetAll()
     {
+        if (head == null)
+        {
+            Console.WriteLine("The Linked List is empty");
+        }
         Node? temp = head;
         while (temp != null)
         {
             Console.WriteLine(temp.Data);
             temp = temp.Next;
         }
+    }
+    public int Search(int target)
+    {
+        if(head  == null)
+        {
+            Console.WriteLine("The Linked List is empty");
+        }
+        Node temp = head;
+        int index = 0;
+        while (temp != null) { 
+            if(temp.Data == target)
+                return temp.Data;
+            temp = temp.Next;
+            index++;
+        }
+        return -1;
     }
 
     public class Node
@@ -157,7 +186,12 @@ public class Program
         list2.AddFirst(6);
         list2.AddFirst(7);
         list2.AddLast(8);
-        list2.AddAtV2(100, 1);
+        list2.RemoveFromFirst();
+        list2.RemoveFromLast();
+        list2 .RemoveFromLast();
+        list2.RemoveFromLast();
+    //    list2.AddAtV2(100, 1);
         list2.GetAll();
+        Console.WriteLine(list2.Search(5));
     }
 }
