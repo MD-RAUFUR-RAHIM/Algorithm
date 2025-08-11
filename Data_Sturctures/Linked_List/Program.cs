@@ -37,21 +37,78 @@ public class LinkedList
         count++;
     }
 
-    public void AddAt(int data, int index)
+    public void AddAtV2(int data, int index)
     {
-        if (count + 1 <= index)
+        if (index < 0 || index > count)
             throw new IndexOutOfRangeException();
-        if (index == 0)
+        else if (index == 0)
             AddFirst(data);
-        else if (count + 1 == index)
+        else if (count == index)
             AddLast(data);
         else
         {
             Node? temp = head;
+            for (int i = 0; i < index - 1; i++)
+            {
+                temp = temp.Next;
+            }
+            Node newNode = new Node(data);
+            newNode.Next = temp.Next;
+            temp.Next = newNode;
+            count++;
+        }
+    }
+    public void AddAt(int data, int position)
+    {
+        if (position < 0)
+        {
+            throw new ArgumentOutOfRangeException("position");
+        }
+        else if (position == 0)
+        {
+            AddFirst(data);
+            return;
+        }
+        else
+        {
+            Node? temp = head;
+            for (int i = 0; i < position -1; i++)
+            {
+                temp = temp.Next;
+            }
+            Node newNode = new Node(data);
+            newNode.Next = temp.Next;
+            temp.Next = newNode;
 
         }
     }
+    public void RemoveFromFirst()
+    {
+        if (head == null)
+        {
+            Console.Write("The list is empty");
+            return;
+        }
+            
+        Node? temp = head;
+        head = head.Next;
+        temp.Next = null;
+    }
+    public void RemoveFromLast()
+    {
+        if (head == null)
+        {
+            Console.Write("The list is empty");
+            return;
+        }
+        Node? temp = head;
+        while(temp.Next != tail)
+        {
+            temp = temp.Next;
+        }
+        temp.Next = null;
 
+    }
     public void GetAll()
     {
         Node? temp = head;
@@ -82,9 +139,17 @@ public class Program
         LinkedList list = new LinkedList();
         list.AddFirst(10);
         list.AddFirst(20);
-        list.AddFirst(30);
-        //list.AddLast(50);
+       // list.AddFirst(30);
+        list.AddLast(50);
         //list.AddLast(35);
+        list.AddAt(0, 1);
+        list.GetAll();
+        Console.WriteLine("------Linked List Remove From Last Example---------");
+        list.RemoveFromLast();
+        list.GetAll();
+        Console.WriteLine("------Linked List Remove From First Example---------");
+        list.RemoveFromFirst();
+        list.AddAtV2(100, 1);
         list.GetAll();
     }
 }
