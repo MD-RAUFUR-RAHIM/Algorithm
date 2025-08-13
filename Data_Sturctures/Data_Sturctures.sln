@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linked_List", "Linked_List\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseLinkedList", "ReverseLinkedList\ReverseLinkedList.csproj", "{B81E5BC9-1E31-455B-9C95-E15CEB50BE7D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "middle-of-the-linked-list", "middle-of-the-linked-list\middle-of-the-linked-list.csproj", "{F5AA28EE-6D99-4E3A-8EAC-F47AEB1ECE1C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B81E5BC9-1E31-455B-9C95-E15CEB50BE7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B81E5BC9-1E31-455B-9C95-E15CEB50BE7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B81E5BC9-1E31-455B-9C95-E15CEB50BE7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5AA28EE-6D99-4E3A-8EAC-F47AEB1ECE1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5AA28EE-6D99-4E3A-8EAC-F47AEB1ECE1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5AA28EE-6D99-4E3A-8EAC-F47AEB1ECE1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5AA28EE-6D99-4E3A-8EAC-F47AEB1ECE1C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

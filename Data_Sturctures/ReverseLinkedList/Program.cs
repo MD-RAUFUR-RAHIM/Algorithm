@@ -72,17 +72,15 @@ public class MyLinkedList
 
         while (current != null)
         {
-            ListNode? next = current.Next;  // Save next node
-            current.Next = prev;             // Reverse the link
-            prev = current;                  // Move prev forward
-            current = next;                  // Move current forward
+            ListNode? next = current.Next;  
+            current.Next = prev;             
+            prev = current;                  
+            current = next;                  
         }
-
-        // After reversal:
-        // 'prev' is the new head of the reversed list
-        // 'head' (the original head) becomes the new tail
-        tail = head;    // original head is now tail
-        return prev;    // prev is new head
+         
+       
+        tail = head;   
+        return prev;   
     }
 
 }
