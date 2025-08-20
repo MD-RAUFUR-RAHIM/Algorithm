@@ -23,9 +23,7 @@ public class Solution
             if (list1.val <= list2.val)
             {
                 current.next = list1;
-                list1 = list1.next;
-                // Create list1: 1 → 2 → 4
-                // Create list2: 1 → 4 → 5
+                list1 = list1.next;            
             }
             else
             {
