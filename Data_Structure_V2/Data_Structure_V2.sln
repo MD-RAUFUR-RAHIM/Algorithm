@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackWithLinkedList", "Stac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidParenthesisWithStack", "ValidParenthesisWithStack\ValidParenthesisWithStack.csproj", "{C37A8124-C1EC-463F-B830-49C35E657886}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "155_Min Stack", "155_Min Stack\155_Min Stack.csproj", "{03B8BB94-1ED1-42BE-B834-F8831B79266B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "155_MinWithSingleStack", "155_MinWithSingleStack\155_MinWithSingleStack.csproj", "{9E11DDB3-AC8D-4EA2-B475-17EB164B6B79}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{C37A8124-C1EC-463F-B830-49C35E657886}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C37A8124-C1EC-463F-B830-49C35E657886}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C37A8124-C1EC-463F-B830-49C35E657886}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03B8BB94-1ED1-42BE-B834-F8831B79266B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03B8BB94-1ED1-42BE-B834-F8831B79266B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03B8BB94-1ED1-42BE-B834-F8831B79266B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03B8BB94-1ED1-42BE-B834-F8831B79266B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E11DDB3-AC8D-4EA2-B475-17EB164B6B79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E11DDB3-AC8D-4EA2-B475-17EB164B6B79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E11DDB3-AC8D-4EA2-B475-17EB164B6B79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E11DDB3-AC8D-4EA2-B475-17EB164B6B79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
